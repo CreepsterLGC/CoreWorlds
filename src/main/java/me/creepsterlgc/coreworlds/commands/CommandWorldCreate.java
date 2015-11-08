@@ -1,13 +1,13 @@
-package me.creepsterlgc.coreworlds.commands;
+package main.java.me.creepsterlgc.coreworlds.commands;
 
 
 import java.util.ArrayList;
 
-import me.creepsterlgc.core.Controller;
-import me.creepsterlgc.core.utils.PermissionsUtils;
-import me.creepsterlgc.coreworlds.customized.CWorld;
-import me.creepsterlgc.coreworlds.customized.Worlds;
-import me.creepsterlgc.coreworlds.files.FileWorlds;
+import main.java.me.creepsterlgc.core.Controller;
+import main.java.me.creepsterlgc.core.utils.PermissionsUtils;
+import main.java.me.creepsterlgc.coreworlds.customized.CWorld;
+import main.java.me.creepsterlgc.coreworlds.customized.Worlds;
+import main.java.me.creepsterlgc.coreworlds.files.FileWorlds;
 
 import org.spongepowered.api.Game;
 import org.spongepowered.api.entity.living.player.gamemode.GameMode;

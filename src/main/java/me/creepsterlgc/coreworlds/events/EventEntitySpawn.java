@@ -1,7 +1,7 @@
-package me.creepsterlgc.coreworlds.events;
+package main.java.me.creepsterlgc.coreworlds.events;
 
-import me.creepsterlgc.coreworlds.customized.CWorld;
-import me.creepsterlgc.coreworlds.customized.Worlds;
+import main.java.me.creepsterlgc.coreworlds.customized.CWorld;
+import main.java.me.creepsterlgc.coreworlds.customized.Worlds;
 
 import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.entity.EntityTypes;

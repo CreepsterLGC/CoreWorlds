@@ -1,10 +1,10 @@
-package me.creepsterlgc.coreworlds.events;
+package main.java.me.creepsterlgc.coreworlds.events;
 
 import java.util.Optional;
 
-import me.creepsterlgc.core.utils.PermissionsUtils;
-import me.creepsterlgc.coreworlds.customized.CWorld;
-import me.creepsterlgc.coreworlds.customized.Worlds;
+import main.java.me.creepsterlgc.core.utils.PermissionsUtils;
+import main.java.me.creepsterlgc.coreworlds.customized.CWorld;
+import main.java.me.creepsterlgc.coreworlds.customized.Worlds;
 
 import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.event.Listener;

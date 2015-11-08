@@ -1,4 +1,4 @@
-package me.creepsterlgc.coreworlds.customized;
+package main.java.me.creepsterlgc.coreworlds.customized;
 
 import java.util.HashMap;
 

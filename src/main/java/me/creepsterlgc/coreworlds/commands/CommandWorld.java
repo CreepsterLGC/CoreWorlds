@@ -1,4 +1,4 @@
-package me.creepsterlgc.coreworlds.commands;
+package main.java.me.creepsterlgc.coreworlds.commands;
 
 import java.util.ArrayList;
 import java.util.List;

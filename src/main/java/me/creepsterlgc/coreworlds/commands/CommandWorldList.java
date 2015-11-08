@@ -1,10 +1,10 @@
-package me.creepsterlgc.coreworlds.commands;
+package main.java.me.creepsterlgc.coreworlds.commands;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import me.creepsterlgc.core.Controller;
-import me.creepsterlgc.core.utils.PermissionsUtils;
+import main.java.me.creepsterlgc.core.Controller;
+import main.java.me.creepsterlgc.core.utils.PermissionsUtils;
 
 import org.spongepowered.api.Game;
 import org.spongepowered.api.text.Text;

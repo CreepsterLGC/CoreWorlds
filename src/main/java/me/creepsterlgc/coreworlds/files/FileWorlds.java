@@ -1,4 +1,4 @@
-package me.creepsterlgc.coreworlds.files;
+package main.java.me.creepsterlgc.coreworlds.files;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,9 +19,9 @@ import org.spongepowered.api.world.World;
 import org.spongepowered.api.world.difficulty.Difficulties;
 import org.spongepowered.api.world.difficulty.Difficulty;
 
-import me.creepsterlgc.core.Controller;
-import me.creepsterlgc.coreworlds.customized.CWorld;
-import me.creepsterlgc.coreworlds.customized.Worlds;
+import main.java.me.creepsterlgc.core.Controller;
+import main.java.me.creepsterlgc.coreworlds.customized.CWorld;
+import main.java.me.creepsterlgc.coreworlds.customized.Worlds;
 
 public class FileWorlds {
 	

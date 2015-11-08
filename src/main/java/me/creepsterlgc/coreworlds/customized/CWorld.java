@@ -1,10 +1,10 @@
-package me.creepsterlgc.coreworlds.customized;
+package main.java.me.creepsterlgc.coreworlds.customized;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import me.creepsterlgc.core.Controller;
-import me.creepsterlgc.coreworlds.files.FileWorlds;
+import main.java.me.creepsterlgc.core.Controller;
+import main.java.me.creepsterlgc.coreworlds.files.FileWorlds;
 
 import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.entity.living.player.gamemode.GameMode;

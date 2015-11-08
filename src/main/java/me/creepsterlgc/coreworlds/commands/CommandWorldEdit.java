@@ -1,8 +1,8 @@
-package me.creepsterlgc.coreworlds.commands;
+package main.java.me.creepsterlgc.coreworlds.commands;
 
-import me.creepsterlgc.core.utils.PermissionsUtils;
-import me.creepsterlgc.coreworlds.customized.CWorld;
-import me.creepsterlgc.coreworlds.customized.Worlds;
+import main.java.me.creepsterlgc.core.utils.PermissionsUtils;
+import main.java.me.creepsterlgc.coreworlds.customized.CWorld;
+import main.java.me.creepsterlgc.coreworlds.customized.Worlds;
 
 import org.spongepowered.api.Game;
 import org.spongepowered.api.text.Texts;

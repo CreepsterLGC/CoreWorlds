@@ -14,12 +14,13 @@ import org.spongepowered.api.entity.living.player.gamemode.GameMode;
 import org.spongepowered.api.entity.living.player.gamemode.GameModes;
 import org.spongepowered.api.text.Texts;
 import org.spongepowered.api.text.format.TextColors;
-import org.spongepowered.api.util.command.CommandSource;
+import org.spongepowered.api.command.CommandSource;
 import org.spongepowered.api.world.DimensionType;
 import org.spongepowered.api.world.DimensionTypes;
 import org.spongepowered.api.world.GeneratorType;
 import org.spongepowered.api.world.GeneratorTypes;
 import org.spongepowered.api.world.World;
+import org.spongepowered.api.world.WorldBuilder;
 import org.spongepowered.api.world.difficulty.Difficulties;
 
 
@@ -44,6 +45,7 @@ public class CommandWorldCreate {
 		GeneratorType generator;
 		GameMode gamemode;
 		
+		
 		if(environment.equalsIgnoreCase("overworld")) {
 			dimension = DimensionTypes.OVERWORLD;
 			generator = GeneratorTypes.OVERWORLD;
@@ -56,8 +58,12 @@ public class CommandWorldCreate {
 			dimension = DimensionTypes.END;
 			generator = GeneratorTypes.END;
 		}
+		else if(environment.equalsIgnoreCase("flat")) {
+			dimension = DimensionTypes.OVERWORLD;
+			generator = GeneratorTypes.FLAT;
+		}
 		else {
-			sender.sendMessage(Texts.builder("<environment> has to be: overworld, nether or end").color(TextColors.RED).build());
+			sender.sendMessage(Texts.builder("<environment> has to be: overworld, nether, end or flat").color(TextColors.RED).build());
 			return;
 		}
 		
@@ -80,7 +86,7 @@ public class CommandWorldCreate {
 
 		sender.sendMessage(Texts.of(TextColors.GRAY, "Creating world ", TextColors.YELLOW, name, TextColors.GRAY, ".."));
 		
-		game.getRegistry().createWorldBuilder()
+		game.getRegistry().createBuilder(WorldBuilder.class)
 		.name(name)
 		.enabled(true)
 		.loadsOnStartup(true)

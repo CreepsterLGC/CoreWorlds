@@ -14,12 +14,14 @@ import ninja.leaping.configurate.loader.ConfigurationLoader;
 
 import org.spongepowered.api.entity.living.player.gamemode.GameMode;
 import org.spongepowered.api.entity.living.player.gamemode.GameModes;
+import org.spongepowered.api.text.Texts;
 import org.spongepowered.api.world.Location;
 import org.spongepowered.api.world.World;
 import org.spongepowered.api.world.difficulty.Difficulties;
 import org.spongepowered.api.world.difficulty.Difficulty;
 
 import main.java.me.creepsterlgc.core.Controller;
+import main.java.me.creepsterlgc.core.utils.TextUtils;
 import main.java.me.creepsterlgc.coreworlds.customized.CWorld;
 import main.java.me.creepsterlgc.coreworlds.customized.Worlds;
 
@@ -150,7 +152,7 @@ public class FileWorlds {
 		
 		worlds.getNode("worlds", world.getName(), "private").setValue(world.isPrivate());
 		worlds.getNode("worlds", world.getName(), "whitelist").setValue(world.getWhitelist());
-		worlds.getNode("worlds", world.getName(), "difficulty").setValue(world.getDifficulty().getName());
+		if(world.getDifficulty() != null) worlds.getNode("worlds", world.getName(), "difficulty").setValue(world.getDifficulty().getName());
 		worlds.getNode("worlds", world.getName(), "gamemode").setValue(world.getGamemode().getName());
 		worlds.getNode("worlds", world.getName(), "monsters").setValue(world.getMonsterSpawning());
 		worlds.getNode("worlds", world.getName(), "animals").setValue(world.getAnimalSpawning());

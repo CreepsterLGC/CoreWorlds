@@ -7,7 +7,7 @@ import main.java.me.creepsterlgc.coreworlds.customized.Worlds;
 import org.spongepowered.api.Game;
 import org.spongepowered.api.text.Texts;
 import org.spongepowered.api.text.format.TextColors;
-import org.spongepowered.api.util.command.CommandSource;
+import org.spongepowered.api.command.CommandSource;
 
 
 public class CommandWorldEdit {

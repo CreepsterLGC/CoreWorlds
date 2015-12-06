@@ -45,7 +45,7 @@ public class CoreWorlds {
     	game.getEventManager().registerListeners(this, new EventPlayerBlockBreak());
     	game.getEventManager().registerListeners(this, new EventPlayerInteractBlock());
     	
-    	if(FileCommands.WORLD()) game.getCommandDispatcher().register(this, new CommandWorld(game), "world");
+    	if(FileCommands.WORLD()) game.getCommandManager().register(this, new CommandWorld(game), "world");
     	
     }
     

@@ -8,6 +8,7 @@ import main.java.me.creepsterlgc.coreworlds.files.FileWorlds;
 
 import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.entity.living.player.gamemode.GameMode;
+import org.spongepowered.api.text.Texts;
 import org.spongepowered.api.world.Location;
 import org.spongepowered.api.world.World;
 import org.spongepowered.api.world.difficulty.Difficulty;
@@ -57,7 +58,7 @@ public class CWorld {
 		FileWorlds.save(this);
 		if(!Controller.getServer().getWorld(name).isPresent()) return;
 		World world = Controller.getServer().getWorld(name).get();
-		world.getProperties().setDifficulty(difficulty);
+//		world.getProperties().setDifficulty(difficulty);
 //		world.getProperties().setGameMode(gamemode);
 		world.getProperties().setSpawnPosition(spawn.getBlockPosition());
 	}

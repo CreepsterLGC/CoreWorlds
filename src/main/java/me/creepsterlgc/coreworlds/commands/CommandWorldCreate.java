@@ -20,7 +20,7 @@ import org.spongepowered.api.world.DimensionTypes;
 import org.spongepowered.api.world.GeneratorType;
 import org.spongepowered.api.world.GeneratorTypes;
 import org.spongepowered.api.world.World;
-import org.spongepowered.api.world.WorldBuilder;
+import org.spongepowered.api.world.WorldCreationSettings;
 import org.spongepowered.api.world.difficulty.Difficulties;
 
 
@@ -55,8 +55,8 @@ public class CommandWorldCreate {
 			generator = GeneratorTypes.NETHER;
 		}
 		else if(environment.equalsIgnoreCase("end")) {
-			dimension = DimensionTypes.END;
-			generator = GeneratorTypes.END;
+			dimension = DimensionTypes.THE_END;
+			generator = GeneratorTypes.THE_END;
 		}
 		else if(environment.equalsIgnoreCase("flat")) {
 			dimension = DimensionTypes.OVERWORLD;
@@ -86,12 +86,12 @@ public class CommandWorldCreate {
 
 		sender.sendMessage(Texts.of(TextColors.GRAY, "Creating world ", TextColors.YELLOW, name, TextColors.GRAY, ".."));
 		
-		game.getRegistry().createBuilder(WorldBuilder.class)
+		game.getRegistry().createBuilder(WorldCreationSettings.Builder.class)
 		.name(name)
 		.enabled(true)
 		.loadsOnStartup(true)
 		.keepsSpawnLoaded(true)
-		.dimensionType(dimension)
+		.dimension(dimension)
 		.generator(generator)
 		.gameMode(gamemode)
 		.build();
